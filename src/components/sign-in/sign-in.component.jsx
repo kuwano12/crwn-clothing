@@ -17,10 +17,12 @@ class SignIn extends React.Component{
         event.preventDefault();
         this.setState({ email: '', password: ''});
     }
+
     handleChange = event => {
         const { value, name } = event.target;
         this.setState({ [name]: value });
     }
+    
     render() {
         return(
             <div className="sign-in">
